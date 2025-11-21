@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="StoreApp.Services.Identity.Application/StoreApp.Services.Identity.Application.csproj" Id="1dfb86d1-085c-4c1d-ae6b-606fac6753b6" />
+  <Project Path="StoreApp.Services.Identity.Domain/StoreApp.Services.Identity.Domain.csproj" />
+  <Project Path="StoreApp.Services.Identity.Infrastructure/StoreApp.Services.Identity.Infrastructure.csproj" Id="c86a35af-666d-4d0c-a628-5f6f1b83e674" />
+  <Project Path="StoreApp.Services.Identity.WebApi/StoreApp.Services.Identity.WebApi.csproj" Id="b4f019ff-204b-4d93-b3c3-d4df57ec48fc" />
+</Solution>
