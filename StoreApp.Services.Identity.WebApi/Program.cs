@@ -1,3 +1,5 @@
+using StoreApp.Services.Identity.Application.Logging;
+using StoreApp.Services.Identity.Application.Mapping.AutoMapper;
 using StoreApp.Services.Identity.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +17,13 @@ builder.Services.ConfigureDatabaseConnection(builder.Configuration);
 builder.Services.ConfigureIdentity();
 builder.Services.AddAuthentication();
 
+// Configure AutoMapper
+builder.Services.AddAutoMapper(cfg => { }, typeof(AmMappingProfile));
+
 var app = builder.Build();
+
+var logger = app.Services.GetRequiredService<ILoggerService>();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
